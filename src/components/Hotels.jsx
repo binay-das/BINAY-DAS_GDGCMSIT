@@ -1,3 +1,5 @@
+import hotels from "/utility-photos/Hotels.png";
+
 export default function Hotels () {
     return (
         <div className="events-section flex flex-col justify-center items-center m-auto py-10">
@@ -5,7 +7,7 @@ export default function Hotels () {
             <p className="events-section-p text-3xl mb-16">Best Place for Beautiful Trip</p>
 
 
-            <img src="/utility-photos/Hotels.png" alt="" className="mb-16"/>
+            <img src={hotels} alt="hotels" className="mb-16"/>
 
 
             <button className="p-4 text-white bg-green-500 rounded mb-24">Book Now</button>

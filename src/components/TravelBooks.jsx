@@ -1,3 +1,5 @@
+import books from "/utility-photos/Books.jpg";
+
 export default function TravelBooks () {
     return (
         <div className="events-section flex flex-col justify-center items-center m-auto py-10">
@@ -5,7 +7,7 @@ export default function TravelBooks () {
             <p className="events-section-p text-3xl mb-16">Your Travel Time Companion</p>
 
 
-            <img src="/utility-photos/Books.jpg" alt="" className="mb-16"/>
+            <img src={books} alt="" className="mb-16"/>
 
             <button className="events-btn">View Now</button>
         </div>

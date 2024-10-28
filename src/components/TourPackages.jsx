@@ -2,10 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import Santorini from "/tours/Santorini.png";
+import Peru from "/tours/Peru.png";
+import Arizona from "/tours/Arizona.png";
+
+
 const tours = [
-    { img: "/tours/Santorini.png", location: "Santorini, Aegean Sea", rating: 4.2, price: 300 },
-    { img: "/tours/Peru.png", location: "Machu Picchu, Peru", rating: 4.5, price: 450 },
-    { img: "/tours/Arizona.png", location: "Grand Canyon National Park, Arizona", rating: 4.7, price: 400 },
+    { img: Santorini, location: "Santorini, Aegean Sea", rating: 4.2, price: 300 },
+    { img: Peru, location: "Machu Picchu, Peru", rating: 4.5, price: 450 },
+    { img: Arizona, location: "Grand Canyon National Park, Arizona", rating: 4.7, price: 400 },
 ];
 
 export default function TourPackages() {

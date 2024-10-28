@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
+import hero1 from "/hero/hero1.avif";
+import hero2 from "/hero/hero2.jpg";
+
+import story1 from "/story/story.jpg";
+import story2 from "/story/play.png";
+
+
 export default function HeroSection() {
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -21,8 +28,8 @@ export default function HeroSection() {
     return (
         <div className="hero-section grid grid-cols-2 min-h-screen mx=auto">
             <div className="left">
-                <img src="/hero/hero1.avif" alt="" className="hero-img-1 border-8 rounded-3xl shadow-indigo-50" />
-                <img src="/hero/hero2.jpg" alt="" className="hero-img-2 border-8 rounded-3xl shadow-indigo-50" />
+                <img src={hero1} alt="" className="hero-img-1 border-8 rounded-3xl shadow-indigo-50" />
+                <img src={hero2} alt="" className="hero-img-2 border-8 rounded-3xl shadow-indigo-50" />
             </div>
             <div className="right flex flex-col text-center gap-4">
                 <h1 className="text-5xl font-extrabold text-right flex flex-col gap-3 mr-16">
@@ -51,10 +58,10 @@ export default function HeroSection() {
                     </button>
                 </div>
                 <div className="story rounded-full mx-auto">
-                    <img className='story-1' src="/story/story.jpg" alt="" srcset="" />
+                    <img className='story-1' src={story1} alt="" srcset="" />
 
                     <div className="play relative">
-                        <img className='story-2' src="/story/play.png" alt="" />
+                        <img className='story-2' src={story2} alt="" />
                     </div>
                 </div>
 

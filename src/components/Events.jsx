@@ -1,3 +1,5 @@
+import events from "/utility-photos/Event.jpg";
+
 export default function Events () {
     return (
         <div className="events-section flex flex-col justify-center items-center m-auto py-10">
@@ -5,7 +7,7 @@ export default function Events () {
             <p className="events-section-p text-3xl mb-16">Expolore unique cultures and Festivals</p>
 
 
-            <img src="/utility-photos/Event.jpg" alt="" className="mb-16"/>
+            <img src={events} alt="" className="mb-16"/>
 
             <button className="events-btn">View Now</button>
         </div>

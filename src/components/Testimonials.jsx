@@ -1,6 +1,10 @@
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import testimonial1 from "/testimonials/testimonial1.jpg";
+import testimonial2 from "/testimonials/testimonial2.jpg";
+import testimonial3 from "/testimonials/testimonial3.jpg";
+
 export default function Testimonials() {
     return (
         <div className="testimonials-section flex flex-col justify-center items-center m-auto py-10">
@@ -9,7 +13,7 @@ export default function Testimonials() {
             <div className="testimonials-cards flex justify-center items-center gap-2">
                 <div className="testimonial-card">
                     <div className="image-container">
-                        <img src="/testimonials/testimonial1.jpg" alt="Testimonial 1" className="testimonial-img front" />
+                        <img src={testimonial1} alt="Testimonial 1" className="testimonial-img front" />
                         <div className="card-back">
 
                             <p className="testimonial-text">
@@ -25,7 +29,7 @@ export default function Testimonials() {
 
                 <div className="testimonial-card">
                     <div className="image-container">
-                        <img src="/testimonials/testimonial2.jpg" alt="Testimonial 2" className="testimonial-img front" />
+                        <img src={testimonial2} alt="Testimonial 2" className="testimonial-img front" />
                         <div className="card-back">
                             <p className="testimonial-text">
                                 <sup><FontAwesomeIcon icon={faQuoteLeft} className="quote-left" /></sup>
@@ -39,7 +43,7 @@ export default function Testimonials() {
 
                 <div className="testimonial-card">
                     <div className="image-container">
-                        <img src="/testimonials/testimonial3.jpg" alt="Testimonial 3" className="testimonial-img front" />
+                        <img src={testimonial3} alt="Testimonial 3" className="testimonial-img front" />
                         <div className="card-back">
                             <p className="testimonial-text">
                                 <sup><FontAwesomeIcon icon={faQuoteLeft} className="quote-left" /></sup>

@@ -2,6 +2,10 @@ import { faGithub, faInstagram, faLinkedin, faXTwitter, faYoutube } from "@forta
 import { faLink, faPhone, faUpLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import footerStat from "/footer/footer-stat.svg";
+import footerMap from "/footer/map.png";
+import google from "/footer/google.png";
+
 export default function Footer() {
     return (
         <footer className="footer w-full">
@@ -37,7 +41,7 @@ export default function Footer() {
                     <h3 className="footer-head pl-[35px] address">Address</h3>
                     <div className="map relative text-right h-[200px] w-[200px]">
                         <div className="canvas">
-                            <img src="/footer/map.png" alt="" className="w-[200px] h-[200px] rounded-xl" />
+                            <img src={footerMap} alt="" className="w-[200px] h-[200px] rounded-xl" />
                         </div>
                     </div>
                 </div>
@@ -58,7 +62,7 @@ export default function Footer() {
                         <FontAwesomeIcon icon={faYoutube} />
                         <FontAwesomeIcon icon={faGithub} />
                     </div>
-                    <img src="/footer/footer-stat.svg" alt="" />
+                    <img src={footerStat} alt="" />
                 </div>
                 <div className="language p-[32px] flex flex-col justify-center items-center">
                     <h5 className="footer-head block mb-[8px] font-black">Select Language: </h5>
@@ -87,7 +91,7 @@ export default function Footer() {
                             </select>
                             <div className="flex flex-col justify-center items-center w-full">
                                 <span>Powered by</span>
-                                <img src="/footer/google.png" alt="google_logo" height={'90%'} />
+                                <img src={google} alt="google_logo" height={'90%'} />
                                 <span className="font-extrabold text-black">Translate</span>
                             </div>
                         </div>

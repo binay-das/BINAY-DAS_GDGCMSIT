@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";
 
+import logo from "/logo.png";
+
 const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -38,7 +40,7 @@ export default function NavBar() {
             className={`sticky top-0 mx-auto flex justify-between items-center text-gray-100 overflow-hidden px-4 py-8 tracking-wider ${isScrolled ? "scrolled" : ""}`}
         >
             <div className="logo flex justify-center items-center text-3xl font-bold">
-                <img src="/logo.png" alt="" style={{ width: "40px" }} />
+                <img src={logo} alt="logo" style={{ width: "40px" }} />
                 <h1>
                     Tourguide<span className="text-blue-400">.</span>
                 </h1>

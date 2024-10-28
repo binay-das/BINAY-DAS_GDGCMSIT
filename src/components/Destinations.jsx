@@ -7,14 +7,22 @@ import { useRef } from "react";
 
 import './Destinations.css';
 
+import EiffelTower from "/destinations/destinations-EiffelTower.webp";
+import LondonEye from "/destinations/destinations-GiantWheel.webp";
+import Maldives from "/destinations/destinations-Maldives.jpg";
+import DubaiMeuseum from "/destinations/destinations-Museum.jpg";
+import TajMahal from "/destinations/destinations-TajMahal.jpg";
+import LehLadakh from "/destinations/destinations-LehLadakh.jpg";
+import TimesSquare from "/destinations/destinations-TimesSquare.jpg";
+
 const images = [
-    { src: "/destinations/destinations-EiffelTower.webp", text: "Eiffel Tower", p: 'The Eiffel Tower is an iconic iron lattice tower in Paris, built for the 1889 Worlds Fair, standing at 324 meters tall.' },
-    { src: "/destinations/destinations-GiantWheel.webp", text: "London Eye", p: 'The London Eye, a striking 135-meter tall observation wheel on the South Bank of the Thames, offers panoramic views of the citys landmarks.' },
-    { src: "/destinations/destinations-Maldives.jpg", text: "Maldives", p: 'Male Beach, the pristine stretch of golden sand on Malé Atoll, offers a serene escape with crystal-clear waters and vibrant marine life.' },
-    { src: "/destinations/destinations-Museum.jpg", text: "Museum", p: 'The Museum of the Future in Dubai is a visionary architectural gem that explores cutting-edge innovations and the potential of tomorrows technology.' },
-    { src: "/destinations/destinations-TajMahal.jpg", text: "Taj Mahal", p: 'The Taj Mahal, a majestic white marble mausoleum in Agra, is a timeless symbol of love and architectural brilliance.' },
-    { src: "/destinations/destinations-LehLadakh.jpg", text: "Leh Ladakh", p: 'Leh Ladakh, a breathtaking high-altitude region in northern India, captivates with its rugged landscapes, serene monasteries, and vibrant cultural heritage.' },
-    { src: "/destinations/destinations-TimesSquare.jpg", text: "Times Square", p: 'Times Square is a vibrant commercial and entertainment hub in New York City, renowned for its bright lights, Broadway theaters, and bustling atmosphere.' },
+    { src: EiffelTower, text: "Eiffel Tower", p: 'The Eiffel Tower is an iconic iron lattice tower in Paris, built for the 1889 Worlds Fair, standing at 324 meters tall.' },
+    { src: LondonEye, text: "London Eye", p: 'The London Eye, a striking 135-meter tall observation wheel on the South Bank of the Thames, offers panoramic views of the citys landmarks.' },
+    { src: Maldives, text: "Maldives", p: 'Male Beach, the pristine stretch of golden sand on Malé Atoll, offers a serene escape with crystal-clear waters and vibrant marine life.' },
+    { src: DubaiMeuseum, text: "Museum", p: 'The Museum of the Future in Dubai is a visionary architectural gem that explores cutting-edge innovations and the potential of tomorrows technology.' },
+    { src: TajMahal, text: "Taj Mahal", p: 'The Taj Mahal, a majestic white marble mausoleum in Agra, is a timeless symbol of love and architectural brilliance.' },
+    { src: LehLadakh, text: "Leh Ladakh", p: 'Leh Ladakh, a breathtaking high-altitude region in northern India, captivates with its rugged landscapes, serene monasteries, and vibrant cultural heritage.' },
+    { src: TimesSquare, text: "Times Square", p: 'Times Square is a vibrant commercial and entertainment hub in New York City, renowned for its bright lights, Broadway theaters, and bustling atmosphere.' },
 ];
 
 export default function Destinations() {
